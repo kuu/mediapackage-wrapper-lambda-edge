@@ -1,18 +1,4 @@
-# Welcome to your CDK TypeScript project
-
-This is a blank project for CDK development with TypeScript.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
-
+# mediapackage-wrapper-lambda-edge
 
 ## Prerequisites
 * Install [Node.js](https://nodejs.org/en)
@@ -24,7 +10,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 $ git clone https://github.com/kuu/mediapackage-wrapper-lambda-edge.git
 $ cd mediapackage-wrapper-lambda-edge
 Edit lib/medipackage-wrapper-lambda-edge-stack.ts
-==> Replace the value of HLS_ENDPOINT_URL
+==> Replace the value of HLS_ENDPOINT_URL with your MediaPackage endpoint
 $ npm install
 $ npm run build
 $ cdk synthesize
