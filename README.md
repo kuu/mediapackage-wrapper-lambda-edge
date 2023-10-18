@@ -9,9 +9,10 @@
 ```
 $ git clone https://github.com/kuu/mediapackage-wrapper-lambda-edge.git
 $ cd mediapackage-wrapper-lambda-edge
+$ npm install
+$ (cd handlers/manipulate-manifest/ ; npm install)
 Edit lib/medipackage-wrapper-lambda-edge-stack.ts
 ==> Replace the value of HLS_ENDPOINT_URL with your MediaPackage endpoint
-$ npm install
 $ npm run build
 $ cdk synthesize
 $ cdk deploy --all
