@@ -1,4 +1,8 @@
 # mediapackage-wrapper-lambda-edge
+* This AWS CDK app deploys a CloudFront distribution with a Lambda@Edge function.
+* The app accepts a MediaPackage HLS endpoint URL.
+* The Lambda@Edge function manipulates the HLS playlist fetched from the URL.
+* #EXT-X-START tag will be added to the HLS playlist.
 
 ## Prerequisites
 * Install [Node.js](https://nodejs.org/en)
@@ -27,3 +31,8 @@ MedipackageWrapperLambdaEdgeStack.CloudFrontDistributionHLS = <<HLS endpoint URL
 MedipackageWrapperLambdaEdgeStack.CloudFrontDistributionId = <<CloudFront distribution ID>>
 ```
 Playback the URL and check if the manifest is manipulated.
+
+## Clean up
+```
+$ cdk destroy --all
+```
